@@ -43,3 +43,9 @@ public class CreateSubscription {
           startDate.setDay(30);
           startDate.setMonth(12);
         }
+          catch(ArithmeticException e)
+        {
+        	 System.out.println(e);  
+        }
+    }}
+
