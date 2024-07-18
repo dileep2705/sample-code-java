@@ -43,9 +43,6 @@ public class CreateSubscription {
           startDate.setDay(30);
           startDate.setMonth(12);
         }
-        finally {
-        if (input != null)
-            input.close();
-    }
+        
     }}
 
