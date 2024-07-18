@@ -43,9 +43,7 @@ public class CreateSubscription {
           startDate.setDay(30);
           startDate.setMonth(12);
         }
-        catch (DatatypeConfigurationException e) {
-    throw new RuntimeException(e);
-  }
+    
         
     }}
 
