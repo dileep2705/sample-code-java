@@ -42,7 +42,9 @@ public class CreateSubscription {
           XMLGregorianCalendar startDate = DatatypeFactory.newInstance().newXMLGregorianCalendar();
           startDate.setDay(30);
           startDate.setMonth(12);
-        }
+        } finally {  
+            System.out.println("finally block is always executed");  
+        } 
     
         
     }}
