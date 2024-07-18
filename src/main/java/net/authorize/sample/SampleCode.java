@@ -83,6 +83,7 @@ public class SampleCode {
 		System.out.println("    CreateAnApplePayTransaction");
 		System.out.println("    CreateAnAndroidPayTransaction");
 		System.out.println("    CreateAnAcceptTransaction");
+		System.out.println("    CreateGooglePayTransaction");
 		System.out.println("    ChargeCustomerProfile");
 		System.out.println("    CreateSubscription");
 		System.out.println("    CreateSubscriptionFromCustomerProfile");
@@ -140,13 +141,13 @@ public class SampleCode {
 		// Update the transactionId with which you want to run the sample code
 		String transactionId = "123456";
 
-		String customerProfileId = "36596285";
-		String customerPaymentProfileId = "33086593";
-		String customerAddressId = "1873761911";
+		String customerProfileId = "918133235";
+		String customerPaymentProfileId = "917585361";
+		String customerAddressId = "918189891";
 
-		String emailId = "test@test.com";
+		String emailId = "test@test2021.com";
 
-		String subscriptionId = "2925606";
+		String subscriptionId = "326280";
 
 		Double amount = 123.45;
 
@@ -204,6 +205,9 @@ public class SampleCode {
 			break;
 		case "CreateAnAcceptTransaction":
 			CreateAnAcceptTransaction.run(apiLoginId, transactionKey);
+			break;
+		case "CreateGooglePayTransaction":
+			CreateGooglePayTransaction.run(apiLoginId, transactionKey, amount);
 			break;
 		case "ChargeCustomerProfile":
 			ChargeCustomerProfile.run(apiLoginId, transactionKey, customerProfileId, customerPaymentProfileId, amount);
